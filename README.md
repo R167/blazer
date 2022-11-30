@@ -1,32 +1,27 @@
 Blazer
 ====
 
-[![GoDoc](https://godoc.org/github.com/kurin/blazer/b2?status.svg)](https://godoc.org/github.com/kurin/blazer/b2)
-[![Build Status](https://travis-ci.org/kurin/blazer.svg)](https://travis-ci.org/kurin/blazer)
+[![GoDoc](https://godoc.org/github.com/Backblaze/blazer/b2?status.svg)](https://godoc.org/github.com/Backblaze/blazer/b2)
+[![Build Status](https://travis-ci.org/Backblaze/blazer.svg)](https://travis-ci.org/Backblaze/blazer)
 
-Blazer is a Golang client library for Backblaze's B2 object storage service.
-It is designed for simple integration with existing applications that may
-already be using S3 and Google Cloud Storage, by exporting only a few standard
-Go types.
-
-It implements and satisfies the [B2 integration
-checklist](https://www.backblaze.com/b2/docs/integration_checklist.html),
-automatically handling error recovery, reauthentication, and other low-level
-aspects, making it suitable to upload very large files, or over multi-day time
-scales.
+Blazer is a Golang client library for Backblaze B2 Cloud Object Storage.
 
 ```go
-import "github.com/kurin/blazer/b2"
+import "github.com/Backblaze/blazer/b2"
 ```
 
-Except see https://www.backblaze.com/blog/backblaze-b2-s3-compatible-api/; you probably don't need this library anymore.
+Blazer targets the Backblaze B2 Native API. Unless you specifically need to access Backblaze B2 via its Native API, you should use the [MinIO Go Client SDK](https://github.com/minio/minio-go) with Backblaze B2's S3 Compatible SDK. 
+
+_Many thanks to Toby Burress ([kurin](https://github.com/kurin)) for creating and maintaining Blazer for its first six years._
 
 ## Examples
 
 ### Getting started
 ```go
-id := "B2_ACCOUNT_ID"
-key := "B2_ACCOUNT_KEY"
+import "os"
+
+id := os.Getenv("B2_APPLICATION_KEY_ID")
+key := os.Getenv("B2_APPLICATION_KEY")
 
 ctx := context.Background()
 
