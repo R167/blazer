@@ -2,7 +2,6 @@ Blazer
 ====
 
 [![GoDoc](https://godoc.org/github.com/Backblaze/blazer/b2?status.svg)](https://godoc.org/github.com/Backblaze/blazer/b2)
-[![Build Status](https://travis-ci.org/Backblaze/blazer.svg)](https://travis-ci.org/Backblaze/blazer)
 
 Blazer is a Golang client library for Backblaze B2 Cloud Object Storage.
 
