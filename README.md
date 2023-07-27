@@ -11,7 +11,7 @@ import "github.com/Backblaze/blazer/b2"
 
 Blazer targets the Backblaze B2 Native API. Unless you specifically need to access Backblaze B2 via its Native API, you should use the [MinIO Go Client SDK](https://github.com/minio/minio-go) with Backblaze B2's S3 Compatible SDK. 
 
-_Many thanks to Toby Burress ([kurin](https://github.com/Backblaze)) for creating and maintaining Blazer for its first six years._
+_Many thanks to Toby Burress ([kurin](https://github.com/kurin)) for creating and maintaining Blazer for its first six years._
 
 ## Examples
 
