@@ -22,8 +22,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/kurin/blazer/internal/b2assets"
-	"github.com/kurin/blazer/x/window"
+	"github.com/Backblaze/blazer/internal/b2assets"
+	"github.com/Backblaze/blazer/x/window"
 )
 
 // StatusInfo reports information about a client.

@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/Backblaze/blazer/internal/b2types"
 	"github.com/google/uuid"
-	"github.com/kurin/blazer/internal/b2types"
 )
 
 const uploadFilePrefix = "/b2api/v1/b2_upload_file/"

@@ -29,7 +29,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kurin/blazer/x/transport"
+	"github.com/Backblaze/blazer/x/transport"
 
 	"context"
 )
