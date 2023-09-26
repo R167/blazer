@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/Backblaze/blazer/b2"
 	"github.com/google/subcommands"
-	"github.com/kurin/blazer/b2"
 )
 
 const (

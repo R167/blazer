@@ -16,11 +16,11 @@
 //
 // To copy a file into B2:
 //
-//     B2_ACCOUNT_ID=foo B2_ACCOUNT_KEY=bar simple /path/to/file b2://bucket/path/to/dst
+//	B2_ACCOUNT_ID=foo B2_ACCOUNT_KEY=bar simple /path/to/file b2://bucket/path/to/dst
 //
 // To copy a file out:
 //
-//     B2_ACCOUNT_ID=foo B2_ACCOUNT_KEY=bar simple b2://bucket/path/to/file /path/to/dst
+//	B2_ACCOUNT_ID=foo B2_ACCOUNT_KEY=bar simple b2://bucket/path/to/file /path/to/dst
 package main
 
 import (
@@ -32,7 +32,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kurin/blazer/b2"
+	"github.com/Backblaze/blazer/b2"
 )
 
 func main() {

@@ -31,7 +31,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	pb "github.com/kurin/blazer/internal/pyre/proto"
+	pb "github.com/Backblaze/blazer/internal/pyre/proto"
 )
 
 type apiErr struct {

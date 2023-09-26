@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kurin/blazer/internal/blog"
+	"github.com/Backblaze/blazer/internal/blog"
 )
 
 var errNoMoreContent = errors.New("416: out of content")
