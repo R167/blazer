@@ -43,7 +43,7 @@ import (
 
 const (
 	APIBase          = "https://api.backblazeb2.com"
-	DefaultUserAgent = "blazer/0.5.3"
+	DefaultUserAgent = "blazer/0.6.0"
 )
 
 type b2err struct {
