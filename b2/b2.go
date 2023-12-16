@@ -29,6 +29,7 @@ package b2
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -247,8 +248,8 @@ func (e b2err) Unwrap() error {
 // IsNotExist reports whether a given error indicates that an object or bucket
 // does not exist.
 func IsNotExist(err error) bool {
-	berr, ok := err.(b2err)
-	if !ok {
+	var berr b2err
+	if !errors.As(err, &berr) {
 		return false
 	}
 	return berr.notFoundErr
@@ -360,8 +361,8 @@ func (c *Client) ListBuckets(ctx context.Context) ([]*Bucket, error) {
 // IsUpdateConflict reports whether a given error is the result of a bucket
 // update conflict.
 func IsUpdateConflict(err error) bool {
-	e, ok := err.(b2err)
-	if !ok {
+	var e b2err
+	if !errors.As(err, &e) {
 		return false
 	}
 	return e.isUpdateConflict
