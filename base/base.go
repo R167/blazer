@@ -294,11 +294,6 @@ func (b *B2) Update(n *B2) {
 	b.opts = n.opts
 }
 
-type httpReply struct {
-	resp *http.Response
-	err  error
-}
-
 func makeNetRequest(ctx context.Context, req *http.Request, rt http.RoundTripper) (*http.Response, error) {
 	req = req.WithContext(ctx)
 	resp, err := rt.RoundTrip(req)
